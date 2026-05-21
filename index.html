@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kngu - Premium Flower Shop & Floral Boutique</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Welcome to Kngu, your premium florist for fresh, hand-delivered bouquets, custom floral designs, and exquisite decorations. Enjoy up to 20% off all spring items.">
+    <meta name="keywords" content="flowers, flower shop, florist, mother's day gifts, fresh bouquets, wedding decorations, tulips, peonies, buy flowers online">
+    <meta name="author" content="Kngu Boutique">
+
+    <!-- RemixIcon CDN (Premium vector icons) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Link Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+         Header & Navigation Area
+         ========================================================================== -->
+    <header class="main-header">
+        <div class="top-bar" id="topAnnouncement">
+            <span>All featured product 50% off Shop Now</span>
+            <button class="top-bar-close-btn" id="closeAnnouncement" aria-label="Close announcement">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <nav class="navbar" id="mainNavbar">
+            <a href="#" class="logo" id="headerLogo"><img src="assets/logo.png" alt="Kngu Logo" class="logo-img"><span class="logo-text">Kngu<span class="logo-dot">.</span></span></a>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active">HOME</a></li>
+                <li><a href="#newProducts" class="nav-link">SHOP <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#blog" class="nav-link">BLOG <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#featured" class="nav-link">PAGES <i class="ri-arrow-down-s-line"></i></a></li>
+                <li><a href="#footer" class="nav-link">CONTACT</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="nav-search-box">
+                    <input type="text" class="nav-search-input" id="searchBarInput" placeholder="Search our store" aria-label="Search our store">
+                    <button class="nav-search-btn" id="btnSearchSubmit" aria-label="Search">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+                <button class="nav-action-btn" id="btnAccount" aria-label="User Account">
+                    <i class="ri-user-line"></i>
+                </button>
+                <button class="nav-action-btn js-open-cart" id="btnCart" aria-label="Open Shopping Cart">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-count-badge" id="cartBadgeCount">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==========================================================================
+         Hero Section (Autoplay Sliding Carousel)
+         ========================================================================== -->
+    <section class="hero-section" id="heroCarousel">
+        <div class="hero-slider">
+            <!-- Slide 1 (Active) -->
+            <div class="hero-slide active hero-slide-mothers-day">
+                <div class="hero-content-wrapper">
+                    <div class="hero-text">
+                        <span class="hero-subtitle subtitle-with-bar">20% Off For<br>New Members</span>
+                        <h1 class="hero-title">HAPPY MOTHER'S DAY!</h1>
+                        <p class="hero-desc">Bouquets your mom will love!</p>
+                        <div class="hero-btn-wrap">
+                            <a href="#newProducts" class="btn btn-primary">START SHOPPING</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-container">
+                            <img src="assets/hero-bg.png" alt="Beautiful Mother's Day floral box mock with rustic rope handles">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide hero-slide-spring-breeze">
+                <div class="hero-content-wrapper">
+                    <div class="hero-text">
+                        <span class="hero-subtitle subtitle-with-bar">Fresh Arrivals<br>Spring Collection</span>
+                        <h2 class="hero-title">SPRING BREEZE COLLECTION</h2>
+                        <p class="hero-desc">Vibrant tulips and daffodils she will cherish!</p>
+                        <div class="hero-btn-wrap">
+                            <a href="#newProducts" class="btn btn-primary">START SHOPPING</a>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-container">
+                            <img src="assets/hero-spring.png" alt="Elegant spring ceramic vase with vibrant yellow tulips and daffodils">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <button class="hero-arrow hero-arrow-prev" aria-label="Previous Slide">
+            <i class="ri-arrow-left-s-line"></i>
+        </button>
+        <button class="hero-arrow hero-arrow-next" aria-label="Next Slide">
+            <i class="ri-arrow-right-s-line"></i>
+        </button>
+
+        <div class="hero-dots">
+            <span class="hero-dot active"></span>
+            <span class="hero-dot"></span>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Features Highlights Banner
+         ========================================================================== -->
+
+    <section class="features-section" id="featuresBanner">
+        <div class="features-grid">
+            <!-- Feature Card 1 -->
+            <div class="feature-card">
+                <div class="feature-icon-blob blob-orange" aria-hidden="true">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 18H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h8v12z"/>
+                        <path d="M14 9h4l3 3v4a2 2 0 0 1-2 2h-5"/>
+                        <path d="M18 9l1.5 3H14"/>
+                        <circle cx="7.5" cy="18.5" r="1.5"/>
+                        <circle cx="17.5" cy="18.5" r="1.5"/>
+                        <text x="5.5" y="13.5" font-family="'Inter', sans-serif" font-size="3" font-weight="900" fill="currentColor" stroke="none">FREE</text>
+                    </svg>
+                </div>
+                <div class="feature-info-box">
+                    <h3 class="feature-title">Free Delivery</h3>
+                    <p class="feature-desc">Free shipping around the world for all orders over $120</p>
+                </div>
+            </div>
+
+            <!-- Feature Card 2 -->
+            <div class="feature-card">
+                <div class="feature-icon-blob blob-cyan" aria-hidden="true">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="6" y="2" width="12" height="20" rx="2.5"/>
+                        <line x1="11" y1="19" x2="13" y2="19"/>
+                        <path d="M6 6h12"/>
+                        <path d="M7 6l0.5 2.5h1.5l-0.5-2.5"/>
+                        <path d="M9.5 6l0.5 2.5h1.5l-0.5-2.5"/>
+                        <path d="M12 6l0.5 2.5h1.5l-0.5-2.5"/>
+                        <path d="M14.5 6l0.5 2.5h1.5l-0.5-2.5"/>
+                        <path d="M6 8.5a1.2 1.2 0 0 0 2.4 0a1.2 1.2 0 0 0 2.4 0a1.2 1.2 0 0 0 2.4 0a1.2 1.2 0 0 0 2.4 0a1.2 1.2 0 0 0 2.4 0"/>
+                        <circle cx="10" cy="14" r="0.8" fill="currentColor"/>
+                        <circle cx="14" cy="14" r="0.8" fill="currentColor"/>
+                        <path d="M8.5 11.5h7l-0.8 1.8H9.3l-0.8-1.8z"/>
+                    </svg>
+                </div>
+                <div class="feature-info-box">
+                    <h3 class="feature-title">Online Order</h3>
+                    <p class="feature-desc">Don't worry you can order Online by our Site</p>
+                </div>
+            </div>
+
+            <!-- Feature Card 3 -->
+            <div class="feature-card">
+                <div class="feature-icon-blob blob-purple" aria-hidden="true">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2c0 0-4.5 4.5-4.5 8.5c0 2 1.5 4 3.5 5c-1-.5-2-2-2.5-3.5c-.5 1 .5 3 2 4.5c-1.5-.5-2.5-1.5-3-3c-.5 1.5.5 3.5 2.5 4.5c2 1 3.5 1.5 5 2.5c1.5-1 3-1.5 5-2.5c2-1 3-3 2.5-4.5c-.5 1.5-1.5 2.5-3 3c1.5-1.5 2.5-3.5 2-4.5c-.5 1.5-1.5 3-2.5 3.5c2-1 3.5-3 3.5-5c0-4-4.5-8.5-4.5-8.5z"/>
+                        <line x1="12" y1="2" x2="12" y2="22"/>
+                        <path d="M12 6.5c1.5 .8 2.5 0 2.5 0"/>
+                        <path d="M12 10c2 1 3 0 3 0"/>
+                        <path d="M12 13.5c1.5 .8 2 0 2 0"/>
+                        <path d="M12 6.5c-1.5 .8-2.5 0-2.5 0"/>
+                        <path d="M12 10c-2 1-3 0-3 0"/>
+                        <path d="M12 13.5c-1.5 .8-2 0-2 0"/>
+                    </svg>
+                </div>
+                <div class="feature-info-box">
+                    <h3 class="feature-title">Freshness</h3>
+                    <p class="feature-desc">You have freshness flowers every single order</p>
+                </div>
+            </div>
+
+            <!-- Feature Card 4 -->
+            <div class="feature-card">
+                <div class="feature-icon-blob blob-green" aria-hidden="true">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/>
+                        <circle cx="7.5" cy="10.5" r="1.2" fill="currentColor"/>
+                        <circle cx="10" cy="15.5" r="1.2" fill="currentColor"/>
+                        <circle cx="14" cy="18.5" r="1.2" fill="currentColor"/>
+                        <circle cx="16.5" cy="15.5" r="1.2" fill="currentColor"/>
+                        <path d="M18 7.5L8.5 17c-.5.5-.5 1.2 0 1.7l.8.8c.5.5 1.2.5 1.7 0l9.5-9.5L18 7.5z"/>
+                        <path d="M21 4.5l-1.5 1.5 1.5 1.5L22.5 6z"/>
+                    </svg>
+                </div>
+                <div class="feature-info-box">
+                    <h3 class="feature-title">Made By Artists</h3>
+                    <p class="feature-desc">World for all made by artists orders over now</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         New Products Section
+         ========================================================================== -->
+    <section class="new-products-section" id="newProducts">
+        <div class="section-title-wrapper new-products-title-wrapper">
+            <h2 class="section-title">New Products</h2>
+            <p class="section-subtitle">A perfect blend of creativity, energy, communication, happiness and love. Let us<br>arrange a smile for you.</p>
+        </div>
+
+        <div class="product-grid new-products-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card new-product-card">
+                <div class="product-img-box new-product-img-box">
+                    <span class="new-product-badge badge-soldout">Soldout</span>
+                    <img src="assets/product-1.jpg" alt="Spring Snowflake">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="1" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="1" disabled style="background-color: #8c8c8c; cursor: not-allowed;">
+                        <i class="ri-close-circle-line"></i> Sold Out
+                    </button>
+                </div>
+                <div class="product-info new-product-info">
+                    <div class="rating-stars centered-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h3 class="product-title centered-title">Spring Snowflake</h3>
+                    <div class="product-price-box centered-prices">
+                        <span class="price-regular">$19.00</span>
+                        <span class="price-old">$29.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card new-product-card">
+                <div class="product-img-box new-product-img-box">
+                    <img src="assets/product-2.jpg" alt="Rock Soapwort">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="2" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="2">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info new-product-info">
+                    <div class="rating-stars centered-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h3 class="product-title centered-title">Rock Soapwort</h3>
+                    <div class="product-price-box centered-prices">
+                        <span class="price-regular">$50.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card new-product-card">
+                <div class="product-img-box new-product-img-box">
+                    <span class="new-product-badge badge-discount">-35%</span>
+                    
+                    <!-- Vertical Countdown timer stack -->
+                    <div class="vertical-countdown">
+                        <div class="countdown-segment">
+                            <span class="num" id="cd-days">00</span>
+                            <span class="lbl">Days</span>
+                        </div>
+                        <div class="countdown-segment">
+                            <span class="num" id="cd-hours">00</span>
+                            <span class="lbl">Hour</span>
+                        </div>
+                        <div class="countdown-segment">
+                            <span class="num" id="cd-mins">00</span>
+                            <span class="lbl">mint</span>
+                        </div>
+                        <div class="countdown-segment">
+                            <span class="num" id="cd-secs">00</span>
+                            <span class="lbl">Sec</span>
+                        </div>
+                    </div>
+
+                    <img src="assets/product-3.jpg" alt="Scarlet Sage">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="3" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="3">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info new-product-info">
+                    <div class="rating-stars centered-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h3 class="product-title centered-title">Scarlet Sage</h3>
+                    <div class="product-price-box centered-prices">
+                        <span class="price-regular">$39.00</span>
+                        <span class="price-old">$60.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card new-product-card">
+                <div class="product-img-box new-product-img-box">
+                    <img src="assets/product-4.jpg" alt="Foxglove Flower">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="4" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="4">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info new-product-info">
+                    <div class="rating-stars centered-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <h3 class="product-title centered-title">Foxglove Flower</h3>
+                    <div class="product-price-box centered-prices">
+                        <span class="price-regular">$79.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Promo & Custom Arrangement Section
+         ========================================================================== -->
+    <section class="promo-section">
+        <div class="promo-container">
+            <div class="promo-image-box">
+                <img src="assets/promo-banner.jpg" alt="Yellow Daffodils and Tulips arranged on a wooden table">
+            </div>
+            <div class="promo-content">
+                <h2 class="promo-title">Suprise Your Valentine! Let us arrange<br>a smile For Her.</h2>
+                <p class="promo-desc">Where flowers are our inspiration to create lasting memories. Whatever the occasion inspiration to create lasting memories...</p>
+                <ul class="promo-bullet-list">
+                    <li>Hand picked just for you.</li>
+                    <li>Hand picked just for you.</li>
+                    <li>Hand picked just for.</li>
+                </ul>
+                <a href="#featured" class="btn btn-promo-details">MORE DETAILS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Featured Items Section (Filterable Tab System)
+         ========================================================================== -->
+    <section class="featured-section" id="featured">
+        <div class="section-title-wrapper">
+            <h2 class="section-title">Featured Items</h2>
+            <p class="section-subtitle">A perfect blend of creativity, energy, communication, happiness and love. Let us<br>arrange a smile for you.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="New Arrivals">NEW</button>
+            <button class="filter-tab" data-filter="all">FEATURED</button>
+            <button class="filter-tab" data-filter="Best Sellers">BEST SELLERS</button>
+        </div>
+
+        <div class="product-grid" id="featuredGrid">
+            <!-- Product Card 5 (Best Seller) -->
+            <div class="product-card hidden" data-category="Best Sellers">
+                <div class="product-img-box">
+                    <span class="product-badge badge-sale">Sale</span>
+                    <img src="assets/product-5.jpg" alt="Amaryllis Coral Stem">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="5" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="5">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <span class="product-tag">Amaryllis</span>
+                    <h3 class="product-title">Amaryllis Coral Stem</h3>
+                    <div class="product-price-box">
+                        <span class="price-regular">$38.00</span>
+                        <span class="price-old">$48.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 6 (Best Seller) -->
+            <div class="product-card hidden" data-category="Best Sellers">
+                <div class="product-img-box">
+                    <img src="assets/product-6.jpg" alt="Sweetheart Mini Roses">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="6" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="6">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <span class="product-tag">Roses</span>
+                    <h3 class="product-title">Sweetheart Mini Roses</h3>
+                    <div class="product-price-box">
+                        <span class="price-regular">$29.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 7 (Best Seller) -->
+            <div class="product-card hidden" data-category="Best Sellers">
+                <div class="product-img-box">
+                    <span class="product-badge badge-sale">Sale</span>
+                    <img src="assets/product-7.jpg" alt="Spring Gerberas Mix">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="7" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="7">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <span class="product-tag">Gerbera</span>
+                    <h3 class="product-title">Spring Gerberas Mix</h3>
+                    <div class="product-price-box">
+                        <span class="price-regular">$45.00</span>
+                        <span class="price-old">$55.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 8 (Best Seller) -->
+            <div class="product-card hidden" data-category="Best Sellers">
+                <div class="product-img-box">
+                    <img src="assets/product-8.jpg" alt="Elegant Peony Stem">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="8" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="8">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <span class="product-tag">Peony Stem</span>
+                    <h3 class="product-title">Elegant Peony Stem</h3>
+                    <div class="product-price-box">
+                        <span class="price-regular">$32.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 9 (New Arrival) -->
+            <div class="product-card" data-category="New Arrivals">
+                <div class="product-img-box">
+                    <img src="assets/product-9.jpg" alt="Carnation Cloud Bouquet">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="9" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="9">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <span class="product-tag">Carnation</span>
+                    <h3 class="product-title">Carnation Cloud Bouquet</h3>
+                    <div class="product-price-box">
+                        <span class="price-regular">$39.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 10 (Best Seller) -->
+            <div class="product-card hidden" data-category="Best Sellers">
+                <div class="product-img-box">
+                    <span class="product-badge badge-new">New</span>
+                    <img src="assets/product-10.jpg" alt="Violet Aster Starburst">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="10" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="10">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                    </div>
+                    <span class="product-tag">Aster</span>
+                    <h3 class="product-title">Violet Aster Starburst</h3>
+                    <div class="product-price-box">
+                        <span class="price-regular">$48.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 11 (Best Seller) -->
+            <div class="product-card hidden" data-category="Best Sellers">
+                <div class="product-img-box">
+                    <img src="assets/product-11.jpg" alt="Pink Peony Bouquet">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="11" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="11">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <span class="product-tag">Peonies</span>
+                    <h3 class="product-title">Pink Peony Bouquet</h3>
+                    <div class="product-price-box">
+                        <span class="price-regular">$64.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 12 (New Arrival) -->
+            <div class="product-card" data-category="New Arrivals">
+                <div class="product-img-box">
+                    <span class="product-badge badge-sale">Sale</span>
+                    <img src="assets/product-12.jpg" alt="Purple Tulip Velvet">
+                    <div class="product-actions">
+                        <button class="action-btn js-open-cart" aria-label="Add to cart"><i class="ri-shopping-cart-2-line"></i></button>
+                        <button class="action-btn js-quick-view" data-id="12" aria-label="Quick view"><i class="ri-eye-line"></i></button>
+                    </div>
+                    <button class="quick-add-btn js-add-to-cart" data-id="12">
+                        <i class="ri-shopping-bag-line"></i> Add To Cart
+                    </button>
+                </div>
+                <div class="product-info">
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <span class="product-tag">Tulips</span>
+                    <h3 class="product-title">Purple Tulip Velvet</h3>
+                    <div class="product-price-box">
+                        <span class="price-regular">$36.99</span>
+                        <span class="price-old">$45.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Testimonials Section (Autoplay Carousel Overlay)
+         ========================================================================== -->
+    <section class="testimonials-section" id="testimonials" style="background-image: url('assets/testimonial-bg.jpg');">
+        <div class="testimonial-container">
+            <div class="testimonial-wrapper">
+                <!-- Testimonial 1 (Active) -->
+                <div class="testimonial-slide active">
+                    <blockquote class="testimonial-quote">"A flower cannot blossom without sunshine, and man cannot live without love. Kngu arranged the most beautiful tulips I have ever seen for my Mother's Day surprise. Absolute class!"</blockquote>
+                    <div class="testimonial-profile">
+                        <div class="testimonial-avatar">
+                            <img src="assets/expert-3.jpg" alt="Aline Lora">
+                        </div>
+                        <h4 class="testimonial-name">Aline Lora</h4>
+                        <span class="testimonial-role">Verified Buyer</span>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide">
+                    <blockquote class="testimonial-quote">"The same-day hand-delivery service was incredibly efficient. The amaryllis stem arrived in immaculate, crisp condition with beautiful customized glasswork. 10/10 recommended!"</blockquote>
+                    <div class="testimonial-profile">
+                        <div class="testimonial-avatar">
+                            <img src="assets/expert-4.jpg" alt="Gavin Croft">
+                        </div>
+                        <h4 class="testimonial-name">Gavin Croft</h4>
+                        <span class="testimonial-role">Corporate Client</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial navigation arrows -->
+            <button class="testi-arrow testi-arrow-prev" aria-label="Previous Testimonial">
+                <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <button class="testi-arrow testi-arrow-next" aria-label="Next Testimonial">
+                <i class="ri-arrow-right-s-line"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Flower Experts Section
+         ========================================================================== -->
+    <section class="experts-section">
+        <div class="section-title-wrapper">
+            <h2 class="section-title">Flower Experts</h2>
+            <p class="section-subtitle">A perfect blend of creativity, energy, communication, happiness and love. Let us<br>arrange a smile for you.</p>
+        </div>
+
+        <div class="experts-grid">
+            <!-- Expert 1 -->
+            <div class="expert-card">
+                <div class="expert-img-container">
+                    <img src="assets/expert-1.jpg" alt="Emily Johnson">
+                </div>
+                <h3 class="expert-name">Emily Johnson</h3>
+                <span class="expert-role">Florist Specialist</span>
+            </div>
+
+            <!-- Expert 2 -->
+            <div class="expert-card">
+                <div class="expert-img-container">
+                    <img src="assets/expert-2.jpg" alt="Jessica Teal">
+                </div>
+                <h3 class="expert-name">Jessica Teal</h3>
+                <span class="expert-role">Head Florist</span>
+            </div>
+
+            <!-- Expert 3 -->
+            <div class="expert-card">
+                <div class="expert-img-container">
+                    <img src="assets/expert-3.jpg" alt="Sarah Green">
+                </div>
+                <h3 class="expert-name">Sarah Green</h3>
+                <span class="expert-role">Styling Expert</span>
+            </div>
+
+            <!-- Expert 4 -->
+            <div class="expert-card">
+                <div class="expert-img-container">
+                    <img src="assets/expert-4.jpg" alt="Anna White">
+                </div>
+                <h3 class="expert-name">Anna White</h3>
+                <span class="expert-role">Florist Specialist</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         From Our Blog Section
+         ========================================================================== -->
+    <section class="blog-section" id="blog">
+        <div class="section-title-wrapper">
+            <h2 class="section-title">From Our Blog</h2>
+            <p class="section-subtitle">A perfect blend of creativity, energy, communication, happiness and love. Let us<br>arrange a smile for you.</p>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <div class="blog-img-box">
+                    <img src="assets/blog-1.jpg" alt="Elegant white tulips blooming in spring">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Flower Beauty</h3>
+                    <div class="blog-meta">
+                        <span>By <span class="blog-author">Jessica Teal</span> <span class="blog-separator">/</span> <span class="blog-date">May 20, 2026</span></span>
+                    </div>
+                    <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid...</p>
+                    <hr class="blog-divider">
+                    <div class="blog-footer">
+                        <a href="#blog" class="blog-link">Continue Reading</a>
+                        <span class="blog-comment"><i class="ri-chat-1-line"></i> 0</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <div class="blog-img-box">
+                    <img src="assets/blog-2.jpg" alt="Premium summer wedding bouquet floral decor">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Local Florists</h3>
+                    <div class="blog-meta">
+                        <span>By <span class="blog-author">Sarah Green</span> <span class="blog-separator">/</span> <span class="blog-date">May 18, 2026</span></span>
+                    </div>
+                    <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid...</p>
+                    <hr class="blog-divider">
+                    <div class="blog-footer">
+                        <a href="#blog" class="blog-link">Continue Reading</a>
+                        <span class="blog-comment"><i class="ri-chat-1-line"></i> 0</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+                <div class="blog-img-box">
+                    <img src="assets/blog-3.jpg" alt="A daughter giving flowers to her happy family">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Flower Power</h3>
+                    <div class="blog-meta">
+                        <span>By <span class="blog-author">Emily Johnson</span> <span class="blog-separator">/</span> <span class="blog-date">May 15, 2026</span></span>
+                    </div>
+                    <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid...</p>
+                    <hr class="blog-divider">
+                    <div class="blog-footer">
+                        <a href="#blog" class="blog-link">Continue Reading</a>
+                        <span class="blog-comment"><i class="ri-chat-1-line"></i> 0</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Newsletter Subscription Area
+         ========================================================================== -->
+    <section class="newsletter-section">
+        <h2 class="newsletter-title">Join The Colorful Bunch!</h2>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+            <i class="ri-mail-line newsletter-icon"></i>
+            <input type="email" class="newsletter-input" placeholder="Your email address" aria-label="Email address for subscription" required>
+            <button type="submit" class="newsletter-submit-btn">SUBSCRIBE</button>
+        </form>
+    </section>
+
+    <!-- ==========================================================================
+         Dark Footer
+         ========================================================================== -->
+    <footer class="main-footer" id="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo"><img src="assets/logo.png" alt="Kngu Logo" class="logo-img"><span class="logo-text">Kngu<span class="logo-dot">.</span></span></a>
+                <p class="footer-brand-desc">A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for you.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon-btn text-icon" aria-label="Facebook">f</a>
+                    <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+                    <a href="#" class="social-icon-btn text-icon" aria-label="Google Plus">G+</a>
+                    <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">INFORMATION</h4>
+                <div class="footer-col-links">
+                    <a href="#">Search Terms</a>
+                    <a href="#">Advanced Search</a>
+                    <a href="#">Helps & Faqs</a>
+                    <a href="#">Store Location</a>
+                    <a href="#">Orders & Returns</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">MY ACCOUNT</h4>
+                <div class="footer-col-links">
+                    <a href="#">Delivery</a>
+                    <a href="#">Legal Notice</a>
+                    <a href="#">Secure payment</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">About us</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">HELP</h4>
+                <div class="footer-col-links">
+                    <a href="#">FAQ's</a>
+                    <a href="#">Pricing Plans</a>
+                    <a href="#">Track</a>
+                    <a href="#">Your Order</a>
+                    <a href="#">Returns</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-col-title">CUSTOMER SERVICE</h4>
+                <div class="footer-col-links">
+                    <a href="#">My Account</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Deliveries & Returns</a>
+                    <a href="#">Gift card</a>
+                    <a href="#">Legal Notice</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright 2026 . All Rights Reserved</p>
+            <div class="payment-partners">
+                <div class="payment-card visa"><span class="card-logo">VISA</span></div>
+                <div class="payment-card mastercard">
+                    <span class="card-logo">
+                        <span class="circle red"></span>
+                        <span class="circle orange"></span>
+                    </span>
+                </div>
+                <div class="payment-card paypal"><span class="card-logo"><span class="pay">Pay</span><span class="pal">Pal</span></span></div>
+                <div class="payment-card skrill"><span class="card-logo">Skrill</span></div>
+                <div class="payment-card maestro">
+                    <span class="card-logo">
+                        <span class="circle red"></span>
+                        <span class="circle blue"></span>
+                    </span>
+                </div>
+                <div class="payment-card electron"><span class="card-logo">VISA<br><span class="small-text">Electron</span></span></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         Shopping Cart Slide-in Sidebar (Drawer UI)
+         ========================================================================== -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-labelledby="cartDrawerTitle">
+        <div class="cart-header">
+            <h3 class="cart-drawer-title" id="cartDrawerTitle">Shopping Cart</h3>
+            <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart drawer">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+
+        <div class="cart-body" id="cartItems">
+            <!-- Dynamic elements generated inside app.js -->
+            <div class="cart-empty-message">
+                <i class="ri-shopping-bag-line cart-empty-icon"></i>
+                <p>Your shopping cart is empty.</p>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-summary-line">
+                <span>Subtotal:</span>
+                <span class="cart-summary-total" id="cartSubtotal">$0.00</span>
+            </div>
+            <div class="cart-actions">
+                <a href="#newProducts" class="btn btn-secondary js-open-cart" onclick="alert('Proceeding to Checkout!');">Checkout</a>
+                <button class="btn btn-outline" id="cartContinueBtn" onclick="document.getElementById('cartCloseBtn').click();">Continue Shopping</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ==========================================================================
+         Quick View Overlay Modal System
+         ========================================================================== -->
+    <div class="quickview-overlay" id="quickviewOverlay">
+        <div class="quickview-modal" id="quickviewModal" role="dialog" aria-modal="true">
+            <button class="quickview-close-btn" id="quickviewCloseBtn" aria-label="Close modal">
+                <i class="ri-close-line"></i>
+            </button>
+            
+            <div class="quickview-content-grid">
+                <div class="quickview-img-box">
+                    <img id="qvImage" src="assets/product-1.jpg" alt="Product detail image">
+                </div>
+                <div class="quickview-info-box">
+                    <span class="quickview-tag" id="qvTag">Pastel Tulip</span>
+                    <h3 class="quickview-title" id="qvTitle">Blushing Beauty Bouquet</h3>
+                    <div class="rating-stars">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                    </div>
+                    <div class="quickview-price-box" id="qvPriceBox">
+                        <span class="price-regular">$49.99</span>
+                        <span class="price-old">$59.99</span>
+                    </div>
+                    <p class="quickview-desc" id="qvDesc">Premium fresh cut spring bouquets arranged manually with our beautiful florist styling rules.</p>
+                    
+                    <div class="quickview-actions">
+                        <div class="quickview-qty">
+                            <button class="quickview-qty-btn" id="qvQtyMinus" aria-label="Decrease quantity"><i class="ri-subtract-line"></i></button>
+                            <span class="quickview-qty-val" id="qvQtyVal">1</span>
+                            <button class="quickview-qty-btn" id="qvQtyPlus" aria-label="Increase quantity"><i class="ri-add-line"></i></button>
+                        </div>
+                        <button class="btn btn-primary" id="qvAddToCartBtn">
+                            <i class="ri-shopping-bag-line"></i> Add To Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         Toast Alerts Overlay Container
+         ========================================================================== -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Link App Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
