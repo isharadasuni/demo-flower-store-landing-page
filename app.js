@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function openCart() {
         cartOverlay.classList.add('active');
         cartDrawer.classList.add('active');
-        document.body.style.overflow = 'hidden'; // prevent scrolling behind
+        document.body.style.overflow = 'hidden';
     }
 
     function closeCart() {

@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     font-size: 2.6rem;
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 1rem;       /* Clear space between title and subtitle */
+    margin-bottom: 1rem;      
     position: relative;
     display: inline-block;
     letter-spacing: -0.3px;
@@ -118,9 +118,9 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     color: #111111;
     font-weight: 400;
     max-width: 660px;
-    margin: 0 auto;            /* Center horizontally */
-    text-align: center;        /* Center the wrapped text lines */
-    line-height: 1.7;          /* Comfortable reading line-height */
+    margin: 0 auto;            
+    text-align: center;        
+    line-height: 1.7;         
 }
 
 /* --- Buttons & UI Elements --- */
@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     height: 65vh;
     min-height: 480px;
     background-color: var(--bg-warm);
-    margin-top: 90px; /* offset for sticky navbar */
+    margin-top: 90px; 
     overflow: hidden;
     transition: margin-top 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -491,7 +491,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem; /* Larger, elegant chevron icon */
+    font-size: 2rem;
     cursor: pointer;
     z-index: 10;
     box-shadow: none;
@@ -537,7 +537,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     border-radius: 10px;
 }
 
-/* --- Custom Hero Slides Style (Mockup High-Fidelity Overrides) --- */
+/* --- Custom Hero Slides Style --- */
 .hero-slide-mothers-day {
     background-image: linear-gradient(to right, #f2f0ec 40%, rgba(242, 240, 236, 0.95) 55%, rgba(242, 240, 236, 0.4) 75%, transparent 95%), url('assets/hero-bg.png');
     background-color: #f2f0ec;
@@ -551,13 +551,13 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .hero-slide-mothers-day,
 .hero-slide-spring-breeze {
     background-size: contain !important;
-    background-position: right center !important; /* Shift to right edge for a beautiful layout */
+    background-position: right center !important; 
     background-repeat: no-repeat !important;
 }
 
 .hero-slide-mothers-day .hero-image-wrapper,
 .hero-slide-spring-breeze .hero-image-wrapper {
-    display: none !important; /* Hide standard image grid column */
+    display: none !important; 
 }
 
 .hero-slide-mothers-day .hero-content-wrapper,
@@ -590,13 +590,13 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .hero-slide-mothers-day .hero-title,
 .hero-slide-spring-breeze .hero-title {
     font-family: 'Outfit', sans-serif !important;
-    font-size: clamp(2rem, 4.2vw, 3.6rem) !important; /* responsive font size to avoid wrapping, matching mockup perfectly */
+    font-size: clamp(2rem, 4.2vw, 3.6rem) !important; 
     font-weight: 700 !important;
     color: var(--accent-dark) !important;
-    letter-spacing: normal !important; /* Standard spacing as in the mockup */
-    margin-bottom: 1.2rem !important; /* Elegant tight spacing next to description */
+    letter-spacing: normal !important; 
+    margin-bottom: 1.2rem !important;
     line-height: 1.1 !important;
-    white-space: nowrap; /* Forces text to show in one single line */
+    white-space: nowrap; 
 }
 
 /* Reset nowrap and background layout on mobile viewports */
@@ -610,7 +610,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     .hero-slide-mothers-day,
     .hero-slide-spring-breeze {
         background-size: cover !important;
-        background-position: 65% center !important; /* Stacked layout, centered flowers behind text */
+        background-position: 65% center !important;
     }
     .hero-slide-mothers-day .hero-title,
     .hero-slide-spring-breeze .hero-title {
@@ -635,9 +635,8 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .hero-slide-mothers-day .hero-desc,
 .hero-slide-spring-breeze .hero-desc {
     font-family: 'Inter', sans-serif !important;
-    font-size: 1.1rem !important; /* Clean, elegant sizing */
-    color: var(--text-muted) !important; /* Beautiful charcoal muted shade matching mockup */
-    font-weight: 400 !important;
+    font-size: 1.1rem !important; 
+    color: var(--text-muted) !important; 
     margin-bottom: 2.2rem !important;
 }
 
@@ -645,7 +644,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .hero-slide-spring-breeze .btn {
     text-transform: uppercase;
     font-size: 0.95rem !important;
-    padding: 0.95rem 2.2rem !important; /* Balanced pill sizing */
+    padding: 0.95rem 2.2rem !important; 
     letter-spacing: 0.5px !important;
     font-weight: 600 !important;
 }
@@ -1146,7 +1145,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 }
 
 .centered-prices .price-regular {
-    color: #ff4c4c !important; /* True high-fidelity red/coral active price */
+    color: #ff4c4c !important; 
     font-weight: 700;
 }
 
@@ -1175,12 +1174,12 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 }
 
 .badge-soldout {
-    background-color: #ff4d4d !important; /* Vibrant primary red */
+    background-color: #ff4d4d !important; 
     text-transform: capitalize;
 }
 
 .badge-discount {
-    background-color: #111111 !important; /* Pure modern black */
+    background-color: #111111 !important; 
 }
 
 /* Vertical Semi-Transparent Countdown Timer Strip */
@@ -1244,14 +1243,14 @@ h1, h2, h3, h4, h5, h6, .font-serif {
    ========================================================================== */
 .promo-section {
     background-color: #ffffff !important;
-    padding: 4.5rem 5% 6.5rem 5% !important; /* Centered container paddings */
+    padding: 4.5rem 5% 6.5rem 5% !important; 
 }
 
 .promo-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Changed to 1fr 1fr to match mockup column width distribution */
+    grid-template-columns: 1fr 1fr; 
     gap: 3.5rem;
     align-items: stretch;
 }
@@ -1261,9 +1260,9 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     overflow: hidden;
     box-shadow: none;
     position: relative;
-    aspect-ratio: 1.42 / 1; /* Match mockup aspect ratio exactly */
+    aspect-ratio: 1.42 / 1;
     width: 100%;
-    height: 330px; /* Slimmer, highly managed desktop height matching mockup text density */
+    height: 330px;
 }
 
 .promo-image-box img {
@@ -1280,8 +1279,8 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .promo-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Start from top, matching mockup layout */
-    align-items: flex-start;     /* Left-align all children */
+    justify-content: flex-start; 
+    align-items: flex-start;     
     height: 100%;
     box-sizing: border-box;
     padding: 0;
@@ -1293,26 +1292,26 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     font-weight: 500;
     color: #1c1c1c;
     margin-top: 0;
-    margin-bottom: 1.1rem; /* Precise spacing gap from mockup */
+    margin-bottom: 1.1rem; 
     line-height: 1.35;
     letter-spacing: -0.2px;
-    text-align: left; /* Left-aligned header */
+    text-align: left;
 }
 
 .promo-desc {
     font-family: 'Inter', sans-serif;
-    font-size: 0.92rem; /* Crisp, readable size */
+    font-size: 0.92rem; 
     font-weight: 400;
-    color: #777777; /* Muted gray text color from mockup */
+    color: #777777; 
     margin-top: 0;
-    margin-bottom: 1.1rem; /* Precise spacing gap from mockup */
+    margin-bottom: 1.1rem;
     line-height: 1.6;
-    text-align: left; /* LEFT-ALIGNED as shown in your uploaded image */
+    text-align: left;
 }
 
 .promo-bullet-list {
     margin-top: 0;
-    margin-bottom: 1.8rem; /* Larger spacing gap before the CTA button as shown in your image */
+    margin-bottom: 1.8rem; 
     padding-left: 1.2rem;
     list-style-type: disc;
 }
@@ -1320,10 +1319,10 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 .promo-bullet-list li {
     font-family: 'Inter', sans-serif;
     font-size: 0.92rem;
-    color: #666666; /* Matching muted color */
+    color: #666666; 
     margin-bottom: 0.4rem;
     line-height: 1.5;
-    text-align: left; /* Left-aligned bullets */
+    text-align: left; 
 }
 
 .btn-promo-details {
@@ -1331,17 +1330,17 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     color: #ffffff !important;
     font-family: 'Outfit', sans-serif;
     font-size: 0.8rem;
-    font-weight: 700; /* Bold, crisp text matching mockup */
-    letter-spacing: 0.8px; /* Elegant modern spacing */
-    padding: 0.75rem 2.2rem; /* Sleek, low-profile mockup height */
+    font-weight: 700; 
+    letter-spacing: 0.8px; 
+    padding: 0.75rem 2.2rem; 
     border-radius: 50px;
     display: inline-block;
-    align-self: flex-start; /* CRITICAL: Prevents stretching to full column width! */
+    align-self: flex-start; 
     text-align: center;
     text-transform: uppercase;
     text-decoration: none !important;
     border: none;
-    line-height: 1; /* Crisp, predictable button height alignment */
+    line-height: 1; 
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1430,7 +1429,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(249, 246, 240, 0.9); /* soft cream overlay */
+    background-color: rgba(249, 246, 240, 0.9); 
     z-index: 1;
 }
 
@@ -2490,7 +2489,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     position: relative;
     transition: var(--transition-smooth);
     overflow: hidden;
-    max-height: 100px; /* Allow height collapse transition */
+    max-height: 100px;
 }
 .top-bar.collapsed {
     max-height: 0;
@@ -2520,7 +2519,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
     transition: var(--transition-smooth);
 }
 .main-header.announcement-closed + .hero-section {
-    margin-top: 62px; /* Pull hero banner up when announcement collapses */
+    margin-top: 62px; 
 }
 
 /* --- Capsule Search Box --- */
@@ -2693,7 +2692,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
         padding: 0.5rem 0;
     }
     .nav-link::after {
-        display: none; /* Hide hover underline effect on mobile */
+        display: none; 
     }
     
     .hero-content-wrapper {
@@ -2766,7 +2765,7 @@ h1, h2, h3, h4, h5, h6, .font-serif {
 /* Mobile Breakpoints */
 @media (max-width: 768px) {
     .nav-search-box {
-        display: none; /* Hide search box to prevent navbar overlap */
+        display: none; 
     }
 }
 
